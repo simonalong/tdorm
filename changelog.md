@@ -61,23 +61,23 @@ x.y.z
 # 1.0.0
 ### 新增
 - 连接数据库：
-  - 支持高级连接
+    - 支持高级连接
 - 执行功能
-  - 新增：支持实体、OrmMap；批量新增（OrmMap和实体）
-  - 删除
+    - 新增：支持实体、OrmMap；批量新增（OrmMap和实体）
+    - 删除
 - 查询功能
-  - 搜索条件拼接
-  - 查询结果转换
-  - 一行：one
-  - 多行：list，listOfDistinct
-  - 一列：value
-  - 多列：values，valuesOfDistinct
-  - 批量：batchInsert
-  - 个数：count
+    - 搜索条件拼接
+    - 查询结果转换
+    - 一行：one
+    - 多行：list，listOfDistinct
+    - 一列：value
+    - 多列：values，valuesOfDistinct
+    - 批量：batchInsert
+    - 个数：count
 - OrmMap功能
-  - from：entity：支持json标签、支持column标签、支持原始名
-  - from：json
-  - from：map
-  - to：entity
-  - to：map
+    - from：entity：支持json标签、支持column标签、支持原始名
+    - from：json
+    - from：map
+    - to：entity
+    - to：map
 
