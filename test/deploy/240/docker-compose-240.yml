@@ -1,0 +1,24 @@
+services:
+  tdengine-service:
+    container_name: tdengine-service-240
+    image: tdengine/tdengine:2.4.0.12
+    ports:
+      - 6160:6060
+      - 6030:6030
+      - 6041:6041
+      - 6043-6060:6043-6060
+      - 6043-6060:6043-6060/udp
+    volumes:
+      - ./data:/var/lib/taos
+      - ./logs:/var/log/taos
+    networks:
+      td-network240:
+        ipv4_address: 71.15.0.202
+
+networks:
+  td-network240:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 71.15.0.0/24
+

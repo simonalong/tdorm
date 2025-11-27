@@ -1,0 +1,25 @@
+services:
+  tdengine-service:
+    container_name: tdengine-service
+    image: tdengine/tdengine:3.2.3.0
+    ports:
+      - 6160:6060
+      - 6030:6030
+      - 6041:6041
+      - 6043-6060:6043-6060
+      - 6043-6060:6043-6060/udp
+    volumes:
+      - ./data:/var/lib/taos
+      - ./logs:/var/log/taos
+    environment:
+      - TZ=Asia/Shanghai  # 设置时区
+    networks:
+      - td-network
+
+networks:
+  td-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 111.15.0.0/24
+

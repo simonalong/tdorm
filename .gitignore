@@ -276,3 +276,10 @@ fabric.properties
 !.gitignore
 /logs/
 *.log
+*.log_lock
+
+*/data/
+*/logs/
+
+**/data/
+**/logs/

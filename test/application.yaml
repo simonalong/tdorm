@@ -1,0 +1,6 @@
+base:
+  logger:
+    level: debug
+    group:
+      tdengine:
+        level: debug
